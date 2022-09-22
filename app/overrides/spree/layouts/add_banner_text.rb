@@ -3,5 +3,5 @@ Deface::Override.new(
   name: 'add banner text',
   insert_top: "[data-hook='body']",
   text: "
-  <h5 class='text-center'><%= current_store.banner_text%></h5>
+  <h5 class='text-center'><%= current_store.banner_text.gsub(/<[^>]*>/,'')%></h5>
 ")

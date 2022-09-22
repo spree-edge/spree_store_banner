@@ -3,3 +3,7 @@
 
 en:
   hello: "Hello world"
+  spree:
+    banner: 'Banner'
+    banner_text: 'Banner Text'
+    banner_color: 'Banner Color'
