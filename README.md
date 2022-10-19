@@ -1,10 +1,13 @@
 # SpreeBanner
 
- This is a Spree Banner Extension. It allows you to add the banner at the frontend.
+## About
+
+This is a Spree Banner Extension. It allows you to add the banner at the frontend.
+
 
 ## Demo
 
-https://user-images.githubusercontent.com/43989104/196639321-d2a14190-8e67-4dca-b03e-43872d952b2f.gif
+<img src="https://user-images.githubusercontent.com/43989104/196639321-d2a14190-8e67-4dca-b03e-43872d952b2f.gif" height=400; width=800;></img>
 
 
 ## Installation
