@@ -1,0 +1,38 @@
+<% content_for :page_title do %>
+  <%= Spree.t(:banners) %>
+<% end %>
+<% content_for :page_actions do %>
+  <%= button_link_to Spree.t(:new_banner), new_admin_banner_url, class: "btn-success", icon: 'add.svg', id: 'admin_new_role_link' %>
+<% end if can? :create, Spree::Banner %>
+<% if @banners.any? %>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <th><%= Spree.t(:content) %></th>
+        <th><%= Spree.t(:color) %></th>
+        <th><%= Spree.t(:published) %></th>
+        <th data-hook="admin_stores_index_header_actions" class="actions"></th>
+      <thead>
+      <tbody>
+        <% @banners.each do |banner| %>
+        <tr>
+          <td><%= banner.content.html_safe %></td>
+          <td><%= banner.color %></td>
+          <td><%= banner.published%></td>
+          <td class="actions" data-hook="admin_stores_index_row_actions">
+            <span class="d-flex justify-content-end">
+            <%= link_to_edit_url spree.edit_admin_banner_path(banner), no_text: true if can?(:edit, banner) %>
+            <%= link_to_delete banner, no_text: true, url: spree.admin_banner_path(banner) if can?(:destroy, banner) %>
+            </span>
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+<% else %>
+  <div class="alert alert-info no-objects-found">
+    <%= Spree.t(:no_resource_found, resource: plural_resource_name(Spree::Banner)) %>,
+    <%= link_to(Spree.t(:add_one), new_admin_banner_url) if can? :create, Spree::Banner %>!
+  </div>
+<% end %>

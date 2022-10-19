@@ -1,0 +1,13 @@
+<% content_for :page_title do %>
+  <div class="d-flex pt-2">
+    <%= link_to Spree.t(:banners), spree.admin_banners_url %>/
+    <%= @banner.content.html_safe %>
+  </div>
+<% end %>
+<%= render partial: 'spree/admin/shared/error_messages', locals: { target: @banner } %>
+<%= form_for [:admin, @banner] do |f| %>
+  <fieldset>
+    <%= render partial: 'form', locals: { f: f } %>
+    <%= render partial: 'spree/admin/shared/edit_resource_links', locals: { collection_url: spree.admin_banners_path } %>
+  </fieldset>
+<% end %>

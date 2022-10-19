@@ -1,0 +1,39 @@
+<div class='card mb-4'>
+  <div class='card-header'>
+    <h1 class='card-title mb-0 h5'>
+      <%= Spree.t(:banner) %>
+    </h1>
+  </div>
+  <div class='card-body'>
+    <div class='alert alert-warning col-12'>
+      <%= Spree.t('store_form.If you want to link your banner in index page') %>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <%= f.field_container :color do %>
+          <%= f.label :banner, Spree.t(:banner_color) %> <br>
+          <%= f.color_field :color, class: 'form-control' %>
+          <%= f.error_message_on :color %>
+        <% end %>
+      </div>
+      <div class="col-6">
+        <%= f.field_container :published do %>
+          <div class='text-center'>
+            <%= f.check_box :published, class: 'form-check-input'%>
+            <%= f.label :banner, Spree.t(:add_to_home_page), class:'form-check-label' %>
+            <%= f.error_message_on :published %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <%= f.field_container :content do %>
+          <%= f.label :banner, Spree.t(:banner_content) %>
+          <%= f.error_message_on :content %>
+          <%= f.text_area :content, class: 'form-control spree-rte'%>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
