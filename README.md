@@ -1,6 +1,11 @@
-# SpreeStoreBanner
+# SpreeBanner
 
-Introduction goes here.
+ This is a Spree Banner Extension. It allows you to add the banner at the frontend.
+
+## Demo
+
+https://user-images.githubusercontent.com/43989104/196639321-d2a14190-8e67-4dca-b03e-43872d952b2f.gif
+
 
 ## Installation
 
