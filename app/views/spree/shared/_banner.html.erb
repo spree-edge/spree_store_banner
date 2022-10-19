@@ -1,0 +1,16 @@
+<style>
+  #banner {
+  background: <%= banner&.color %>;
+  }
+</style>
+<div id="banner" class="d-flex justify-content-center align-items-center">
+  <div class="row pt-3">
+    <div class="col-12 text-center">
+      <h5 class="">
+        <div>
+          <%= banner&.content&.html_safe %>
+        </div>
+      </h5>
+    </div>
+  </div>
+</div>
