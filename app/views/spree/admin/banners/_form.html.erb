@@ -20,7 +20,7 @@
         <%= f.field_container :published do %>
           <div class='text-center'>
             <%= f.check_box :published, class: 'form-check-input'%>
-            <%= f.label :banner, Spree.t(:add_to_home_page), class:'form-check-label' %>
+            <%= f.label :banner, Spree.t(:published), class:'form-check-label' %>
             <%= f.error_message_on :published %>
           </div>
         <% end %>

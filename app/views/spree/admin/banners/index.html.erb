@@ -16,7 +16,7 @@
       <tbody>
         <% @banners.each do |banner| %>
         <tr>
-          <td class="pt-4"><%= banner.content.html_safe %></td>
+          <td><%= simple_format(banner.content) %></td>
           <td><%= banner.color %></td>
           <td><%= banner.published%></td>
           <td class="actions" data-hook="admin_stores_index_row_actions">

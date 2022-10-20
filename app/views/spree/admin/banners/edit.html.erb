@@ -1,7 +1,7 @@
 <% content_for :page_title do %>
   <div class="d-flex pt-2">
     <%= link_to Spree.t(:banners), spree.admin_banners_url %>/
-    <%= @banner.content.html_safe %>
+    <%= simple_format(@banner.content) %>
   </div>
 <% end %>
 <%= render partial: 'spree/admin/shared/error_messages', locals: { target: @banner } %>
