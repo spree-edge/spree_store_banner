@@ -4,6 +4,7 @@ module Spree
   class Banner < ApplicationRecord
     include ActiveModel::Dirty
     validates :content, presence: true
+    validates :name, presence: true
 
     before_save :set_banner, if: :published_changed?
 
