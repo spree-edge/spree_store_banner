@@ -9,6 +9,13 @@
       <%= Spree.t('store_form.If you want to link your banner in index page') %>
     </div>
     <div class="row align-items-center">
+      <div class="col-12">
+        <%= f.field_container :name do %>
+          <%= f.label :banner, Spree.t(:banner_name) %>
+          <%= f.error_message_on :name %>
+          <%= f.text_field :name, class: 'form-control' ,required: true%>
+        <% end %>
+      </div>
       <div class="col-6">
         <%= f.field_container :color do %>
           <%= f.label :banner, Spree.t(:banner_color) %> <br>

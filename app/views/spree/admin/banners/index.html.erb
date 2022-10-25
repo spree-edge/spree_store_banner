@@ -8,7 +8,7 @@
   <div class="table-responsive">
     <table class="table">
       <thead>
-        <th><%= Spree.t(:content) %></th>
+        <th><%= Spree.t(:name) %></th>
         <th><%= Spree.t(:color) %></th>
         <th><%= Spree.t(:published) %></th>
         <th data-hook="admin_stores_index_header_actions" class="actions"></th>
@@ -16,7 +16,7 @@
       <tbody>
         <% @banners.each do |banner| %>
         <tr>
-          <td><%= simple_format(banner.content) %></td>
+          <td><%= banner.name %></td>
           <td><%= banner.color %></td>
           <td><%= banner.published%></td>
           <td class="actions" data-hook="admin_stores_index_row_actions">
