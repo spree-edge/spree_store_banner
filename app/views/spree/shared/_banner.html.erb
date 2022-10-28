@@ -3,13 +3,11 @@
   background: <%= banner&.color %>;
   }
 </style>
-<div id="banner" class="d-flex justify-content-center align-items-center">
-  <div class="row pt-3">
+<div id="banner" class="d-flex justify-content-center align-items-center fixed-top">
+  <div class="row">
     <div class="col-12 text-center">
-      <h5 class="">
-        <div>
-          <%= banner&.content&.html_safe %>
-        </div>
+      <h5 class="pt-2">
+        <%= banner&.content&.html_safe %>
       </h5>
     </div>
   </div>

@@ -7,7 +7,7 @@ This is a Spree Banner Extension. It allows you to add the banner at the fronten
 
 ## Demo
 
-<img src="https://user-images.githubusercontent.com/43989104/196639321-d2a14190-8e67-4dca-b03e-43872d952b2f.gif" height=400; width=800;></img>
+<img src="https://user-images.githubusercontent.com/43989104/198538063-c441a454-c044-4e87-9055-b2f0a7fc0c66.gif" height=400; width=800;></img>
 
 
 ## Installation
