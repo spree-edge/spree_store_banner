@@ -61,8 +61,8 @@ For more options please see [gem-release README](https://github.com/svenfuchs/ge
 
 ## Contributing
 
-If you'd like to contribute, please take a look at the
-[instructions](CONTRIBUTING.md) for installing dependencies and crafting a good
-pull request.
+[See corresponding guidelines](https://github.com/bluebash-spree-contrib/spree_store_banner/blob/master/CONTRIBUTING.md)
 
-Copyright (c) 2022 [name of extension creator], released under the New BSD License
+---
+
+Copyright (c) 2022 Spree Edge. released under the [New BSD License](https://github.com/bluebash-spree-contrib/spree_store_banner/blob/master/LICENSE)
