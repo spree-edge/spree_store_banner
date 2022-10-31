@@ -1,8 +1,8 @@
-# SpreeBanner
+# Spree Store Banners
 
 ## About
 
-This is a Spree Banner Extension. It allows you to add the banner at the frontend.
+A Spree extension that provides ability to add promotional/informative banners to your storefront. With ease customisation, these banners can be easily updated from the backend by updating background color, text and adding hyperlink to the textual content.
 
 
 ## Demo
