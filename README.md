@@ -2,7 +2,7 @@
 
 ## About
 
-A Spree extension that provides ability to add promotional/informative banners to your storefront. With ease customisation, these banners can be easily updated from the backend by updating background color, text and adding hyperlink to the textual content.
+A Spree extension that provides ability to add promotional or informative banners to your storefront. With ease customisation, these banners can be easily updated from the backend by updating background color, text and adding hyperlink to the textual content.
 
 
 ## Demo
