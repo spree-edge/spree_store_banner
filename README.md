@@ -1,4 +1,4 @@
-# Spree Store Banners
+# Spree Store Banner
 
 ## About
 
