@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
 
   s.author    = 'Vishal Garg'
   s.email     = 'vishal@bluebash.co'
-  s.homepage  = 'https://github.com/your-github-handle/spree_store_banner'
+  s.homepage  = 'https://github.com/spree-edge/spree_store_banner'
   s.license = 'BSD-3-Clause'
 
   s.files       = `git ls-files`.split("\n").reject { |f| f.match(/^spec/) && !f.match(/^spec\/fixtures/) }
