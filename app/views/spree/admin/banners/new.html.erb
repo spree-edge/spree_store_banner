@@ -3,7 +3,7 @@
   <%= Spree.t(:new_banner) %>
 <% end %>
 <%= render partial: 'spree/admin/shared/error_messages', locals: { target: @banner } %>
-<%= form_with model: [:admin, @banner] , url: spree.admin_banners_path  do |f| %>
+<%= form_for [:admin, @banner] , url: spree.admin_banners_path  do |f| %>
   <fieldset>
     <%= render partial: 'form', locals: { f: f } %>
     <%= render partial: 'spree/admin/shared/new_resource_links', locals: { collection_url: spree.admin_banners_path(@banner) } %>
