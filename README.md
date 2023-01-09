@@ -65,4 +65,4 @@ For more options please see [gem-release README](https://github.com/svenfuchs/ge
 
 ---
 
-Copyright (c) 2022 Spree Edge. released under the [New BSD License](https://github.com/spree-edge/spree_store_banner/blob/master/LICENSE)
+Copyright (c) 2023 Spree Edge. released under the [New BSD License](https://github.com/spree-edge/spree_store_banner/blob/master/LICENSE)
