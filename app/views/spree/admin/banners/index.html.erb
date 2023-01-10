@@ -18,7 +18,7 @@
         <tr>
           <td><%= banner.name %></td>
           <td><%= banner.color %></td>
-          <td><%= banner.published%></td>
+          <td><%= banner.published? ? 'Yes' : 'No' %></td>
           <td class="actions" data-hook="admin_stores_index_row_actions">
             <span class="d-flex justify-content-end">
             <%= link_to_edit_url spree.edit_admin_banner_path(banner), no_text: true if can?(:edit, banner) %>

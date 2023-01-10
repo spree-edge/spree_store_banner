@@ -1,3 +1,7 @@
+<% content_for :head do %>
+  <%= javascript_include_tag Ckeditor.cdn_url, 'data-turbolinks-track': 'reload' %>
+<% end %>
+
 <div class='card mb-4'>
   <div class='card-header'>
     <h1 class='card-title mb-0 h5'>
@@ -38,7 +42,7 @@
         <%= f.field_container :content do %>
           <%= f.label :banner, Spree.t(:banner_content) %>
           <%= f.error_message_on :content %>
-          <%= f.text_area :content, class: 'form-control spree-rte'%>
+          <%= f.cktext_area :content, rows: 12, class: 'form-control'%>
         <% end %>
       </div>
     </div>

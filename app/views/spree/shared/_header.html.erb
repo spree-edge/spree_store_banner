@@ -1,7 +1,8 @@
 <%# leaving #spree-header div for legacy support  %>
 <% cache spree_nav_cache_key("#{banner.present? ? "#{banner.updated_at.to_i}_header" : 'header'}") do %>
-  <div id="spree-header" class="<%= 'mb-5' if banner.present? %> ">
-    <header id="header" class="d-flex align-items-center header-spree border-bottom <%= 'mt-5' if banner.present? %>">
+  <div id="spree-header" class="<%= banner.present? ? 'sticky-top' : '' %>">
+    <%= render partial: 'spree/shared/banner' %>
+    <header id="header" class="d-flex align-items-center header-spree border-bottom <%= banner.present? ? 'position-static' : '' %>">
       <div class="container-fluid h-100 header-spree-fluid">
         <div class="d-flex flex-nowrap align-items-center h-100 px-2">
           <div class="d-xl-none flex-grow-1 header-spree-fluid-mobile-menu-toggler">
@@ -16,11 +17,9 @@
           </figure>
           <div id="main-nav-bar" class="flex-grow-0 d-none d-xl-block h-100 header-spree-fluid-primary-navigation">
             <%= render partial: 'spree/shared/main_nav_bar' %>
-            <%= render partial: 'spree/shared/banner' %>
           </div>
           <div id="top-nav-bar" class="flex-grow-1 header-spree-fluid-secondary-navigation">
             <%= render partial: 'spree/shared/nav_bar' %>
-            <%= render partial: 'spree/shared/banner' %>
           </div>
           <%= render partial: 'spree/shared/mobile_navigation' %>
         </div>
