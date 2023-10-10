@@ -1,4 +1,4 @@
-class AddStoreIdToSpreeBanners < ActiveRecord::Migration[7.0]
+class AddStoreIdToSpreeBanners < ActiveRecord::Migration[6.1]
   def change
     add_reference :spree_banners, :store, foreign_key: { to_table: :spree_stores }
 

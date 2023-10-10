@@ -10,7 +10,7 @@ module Spree
     before_save :set_banner, if: :published_changed?
 
     def set_banner
-      current_store.banners.update_all(published: false)
+      Spree::Banner.where(store_id: store_id).update_all(published: false)
     end
   end
 end
