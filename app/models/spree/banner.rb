@@ -5,7 +5,7 @@ module Spree
     include ActiveModel::Dirty
     validates :content, presence: true
     validates :name, presence: true
-    belongs_to :store
+    belongs_to :store, touch: true
 
     before_save :set_banner, if: :published_changed?
 
