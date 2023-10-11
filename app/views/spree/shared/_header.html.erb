@@ -1,5 +1,5 @@
 <%# leaving #spree-header div for legacy support  %>
-<% cache spree_menu_cache_key('header') do %>
+<% cache spree_nav_cache_key("#{banner.present? ? "#{banner.updated_at.to_i}_header" : 'header'}") do %>
   <div id="spree-header" class="<%= 'mb-5' if banner.present? %> ">
     <header id="header" class="d-flex align-items-center header-spree border-bottom <%= 'mt-5' if banner.present? %>">
       <div class="container-fluid h-100 header-spree-fluid">
