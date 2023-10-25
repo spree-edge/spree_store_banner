@@ -1,7 +1,5 @@
-# frozen_string_literal: true
-
 module Spree
-  module BannerHelper
+  module BaseHelperDecorator
     def banner
       banners = current_store.banners.where(published: true)
       banners.each do |banner|
@@ -11,3 +9,5 @@ module Spree
     end
   end
 end
+
+::Spree::BaseHelper.prepend ::Spree::BaseHelperDecorator
