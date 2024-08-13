@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.version     = SpreeStoreBanner.version
   s.summary     = 'Extension to add banners in spree'
   s.description = 'Store specific banners'
-  s.required_ruby_version = '>= 2.5'
+  s.required_ruby_version = '>= 3.3.4'
 
   s.author    = 'Vishal Garg'
   s.email     = 'vishal@bluebash.co'
@@ -21,10 +21,9 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree', '>= 4.4.0'
+  s.add_dependency 'spree', '>= 4.8.0'
   s.add_dependency 'spree_extension'
 
   s.add_development_dependency 'spree_dev_tools'
   s.add_development_dependency 'deface'
-
 end

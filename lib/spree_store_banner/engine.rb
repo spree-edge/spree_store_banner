@@ -9,7 +9,7 @@ module SpreeStoreBanner
       g.test_framework :rspec
     end
 
-    initializer 'spree_store_banner.environment', before: :load_config_initializers do |_app|
+    config.after_initialize do |app|
       SpreeStoreBanner::Config = SpreeStoreBanner::Configuration.new
     end
 
@@ -22,3 +22,4 @@ module SpreeStoreBanner
     config.to_prepare(&method(:activate).to_proc)
   end
 end
+
