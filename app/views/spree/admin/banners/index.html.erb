@@ -2,12 +2,12 @@
   <%= Spree.t(:banners) %>
 <% end %>
 <% content_for :page_actions do %>
-  <%= button_link_to Spree.t(:new_banner), new_admin_banner_url, class: "btn-success", icon: 'add.svg', id: 'admin_new_role_link' %>
+  <%= button_link_to Spree.t(:new_banner), new_admin_banner_url, class: "btn-primary", icon: 'add.svg', id: 'admin_new_role_link' %>
 <% end if can? :create, Spree::Banner %>
 <% if @banners.any? %>
-  <div class="table-responsive">
+  <div class="table-responsive border rounded bg-white">
     <table class="table">
-      <thead>
+      <thead class="text-muted">
         <th><%= Spree.t(:name) %></th>
         <th><%= Spree.t(:color) %></th>
         <th><%= Spree.t(:published) %></th>
@@ -31,7 +31,7 @@
     </table>
   </div>
 <% else %>
-  <div class="alert alert-info no-objects-found">
+  <div class="text-center no-objects-found m-5">
     <%= Spree.t(:no_resource_found, resource: plural_resource_name(Spree::Banner)) %>,
     <%= link_to(Spree.t(:add_one), new_admin_banner_url) if can? :create, Spree::Banner %>!
   </div>

@@ -5,13 +5,13 @@
     </h1>
   </div>
   <div class='card-body'>
-    <div class='alert alert-warning col-12'>
+    <div class='text-center col-12'>
       <%= Spree.t('store_form.If you want to link your banner in index page') %>
     </div>
     <div class="row align-items-center">
       <div class="col-12">
         <%= f.field_container :name do %>
-          <%= f.label :banner, Spree.t(:banner_name) %>
+          <%= f.label :banner, Spree.t(:banner_name) %><span class="required font-weight-bold text-danger">*</span>
           <%= f.error_message_on :name %>
           <%= f.text_field :name, class: 'form-control' ,required: true%>
         <% end %>
@@ -36,7 +36,7 @@
     <div class="row">
       <div class="col-12">
         <%= f.field_container :content do %>
-          <%= f.label :banner, Spree.t(:banner_content) %>
+          <%= f.label :banner, Spree.t(:banner_content) %><span class="required font-weight-bold text-danger">*</span>
           <%= f.error_message_on :content %>
           <%= f.text_area :content, class: 'form-control spree-rte'%>
         <% end %>

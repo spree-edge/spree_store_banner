@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.version     = SpreeStoreBanner.version
   s.summary     = 'Extension to add banners in spree'
   s.description = 'Store specific banners'
-  s.required_ruby_version = '>= 3.3.4'
+  s.required_ruby_version = '>= 3.3.0'
 
   s.author    = 'Vishal Garg'
   s.email     = 'vishal@bluebash.co'
