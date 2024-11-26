@@ -1,4 +1,4 @@
-module Spree
+module SpreeStoreBanner
   module StoreDecorator
     def self.prepended(base)
       base.has_many :banners
@@ -6,4 +6,4 @@ module Spree
   end
 end
 
-Spree::Store.prepend Spree::StoreDecorator
+Spree::Store.prepend SpreeStoreBanner::StoreDecorator

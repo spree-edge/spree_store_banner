@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module SpreeBanner
+module SpreeStoreBanner
   module StoreControllerDecorator
     def self.included(base)
       base.include ::Spree::BaseHelper
@@ -10,4 +10,4 @@ module SpreeBanner
   end
 end
 
-::Spree::StoreController.include(::SpreeBanner::StoreControllerDecorator) if defined?(Spree::StoreController)
+::Spree::StoreController.include(::SpreeStoreBanner::StoreControllerDecorator) if defined?(Spree::StoreController)
