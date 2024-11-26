@@ -5,7 +5,6 @@ module SpreeStoreBanner
     def self.included(base)
       base.include ::Spree::BaseHelper
 
-      base.helper 'spree/banner'
     end
   end
 end

@@ -1,7 +1,5 @@
-# frozen_string_literal: true
-
-module Spree
-  module BannerHelper
+module SpreeStoreBanner
+  module FrontendHelperDecorator
     def banner
       return unless current_store.present?
 
@@ -13,3 +11,4 @@ module Spree
     end
   end
 end
+Spree::FrontendHelper.prepend(SpreeStoreBanner::FrontendHelperDecorator)
