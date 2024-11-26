@@ -7,8 +7,7 @@ A Spree extension that provides ability to add promotional or informative banner
 
 ## Demo
 
-<img src="https://user-images.githubusercontent.com/43989104/198538063-c441a454-c044-4e87-9055-b2f0a7fc0c66.gif" height=400; width=800;></img>
-
+https://github.com/user-attachments/assets/dedb6176-44ee-4ada-ad2a-63659e62c7b6
 
 ## Installation
 
