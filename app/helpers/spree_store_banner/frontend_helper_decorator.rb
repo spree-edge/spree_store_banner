@@ -7,8 +7,10 @@ module SpreeStoreBanner
       banners.each do |banner|
         @result = banner
       end
+
       @result
     end
   end
 end
+
 Spree::FrontendHelper.prepend(SpreeStoreBanner::FrontendHelperDecorator)
