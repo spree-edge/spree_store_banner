@@ -2,7 +2,7 @@
   <%= Spree.t(:banners) %>
 <% end %>
 <% content_for :page_actions do %>
-  <%= button_link_to Spree.t(:new_banner), new_admin_banner_url, class: "btn-success", icon: 'add.svg', id: 'admin_new_role_link' %>
+  <%= button_link_to Spree.t(:new_banner), new_admin_banner_url, class: "btn btn-primary", icon: 'add.svg', id: 'admin_new_role_link' %>
 <% end if can? :create, Spree::Banner %>
 <% if @banners.any? %>
   <div class="table-responsive">
